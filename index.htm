@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"  />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu - PJ Azerbaijan</title>       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../src/input.css">
+        <link rel="stylesheet" href="src/output.css">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+    </head>
+    <body>
+        <header class="fixed shadow-[0_5px_40px_-18px_rgba(0,0,0,0.3)] p-sticky bg-white z-50 py-[20px] mb-[20px]">
+            <div class="my-container">
+                <div class="flex justify-between items-center border-b-[1px] px-3 border-gray-200">
+                    <img class="lg:w-[130px] w-[100px]" src="images/papa-johns-logo.svg" alt="Papa Johns Logo" />
+                    <div class="hidden lg:flex items-center gap-2">
+                        <i class="fa-solid fa-globe text-2xl"></i>
+                        <span class="font-bold text-[18px]">Azərbaycanca</span>
+                        <i class="fa-solid fa-chevron-down text-[14px]"></i>
+                    </div>
+                    <div id="responsive" class="lg:hidden flex">
+                        <a class="flex py-2 h-9 m-1 px-3 bg-[#CFEB0B] rounded-3xl border-[1px] text-[12px] hover:bg-white tracking-widest uppercase font-semibold" href="">daxil ol</a>
+                        <button onclick="hamburgerMenu()">
+                            <i class="fa-solid fa-bars text-3xl p-2"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="responsive-1" class="hidden" >
+                    <ul class="p-5 fontPapa">
+                        <li><a class="fontPapa text-[17px] rounded-2xl" href="">Menyu</a></li>
+                        <li><a class="fontPapa font-extrabold text-[17px] rounded-2xl" href="">Təkliflər</a></li>
+                        <li><a class="fontPapa font-extrabold text-[17px] rounded-2xl" href="">Papa Bonus</a></li>
+                        <li><a class="fontPapa font-extrabold text-[17px] rounded-2xl" href="">Papa Talk</a></li>
+                        <li><a class="fontPapa font-extrabold text-[17px] rounded-2xl" href="">Haqqımızda</a></li>
+                    </ul>
+                    <div class="items-center px-5 py-3 border-t-[1px] border-gray-200">
+                        <i class="fa-solid fa-globe text-2xl"></i>
+                        <span class="font-bold text-[18px]">Azərbaycanca</span>
+                        <i class="fa-solid fa-chevron-down text-[14px]"></i>
+                    </div>
+                </div>
+                <div class="hidden justify-between px-3 lg:flex">
+                    <ul class="flex py-1">
+                        <li class="py-3 "><a class="fontPapa font-extrabold text-[20px] hover:bg-gray-100 rounded-2xl px-r-3 py-1" href="">Menyu</a></li>
+                        <li class="py-3 "><a class="fontPapa font-extrabold text-[20px] hover:bg-gray-100 rounded-2xl px-3 py-1" href="">Təkliflər</a></li>
+                        <li class="py-3 "><a class="fontPapa font-extrabold text-[20px] hover:bg-gray-100 rounded-2xl px-3 py-1" href="">Papa Bonus</a></li>
+                        <li class="py-3 "><a class="fontPapa font-extrabold text-[20px] hover:bg-gray-100 rounded-2xl px-3 py-1" href="">Papa Talk</a></li>
+                        <li class="py-3 "><a class="fontPapa font-extrabold text-[20px] hover:bg-gray-100 rounded-2xl px-3 py-1" href="">Haqqımızda</a></li>
+                    </ul>
+                    <a class="flex w-[170px] items-center h-[40px] py-3 px-12 bg-[#CFEB0B] rounded-3xl m-1 border-[1px] text-[14px] hover:bg-white tracking-widest uppercase font-semibold" href="">daxil ol</a>
+                </div>
+                <div class="lg:px-0 pl-5">
+                    <ul class="flex flex-nowrap lg:flex-wrap lg:overflow-hidden overflow-x-auto w-full scrollbar-hide space-x-2 ">
+                        <li class="py-2"><a class="text-[14px] px-2 py-1 uppercase lg:text-[18px] lg:px-4" href="#kampA">kampaniyalar</a></li> 
+                        <li class="py-2"><a class="uppercase text-[14px] lg:text-[18px] px-2 py-1" href="#pizzaA">Pizza</a></li>
+                        <li class="py-2"><a class="uppercase text-[14px] lg:text-[18px] lg:px-4" href="#qelyanaltiA">qəlyanaltı</a></li>
+                        <li class="py-2"><a class="uppercase text-[14px] lg:text-[18px] lg:px-4 text-nowrap" href="">star pizza</a></li>
+                        <li class="py-2"><a class="text-[14px] lg:text-[18px] lg:px-4 text-nowrap" href="#pizzaPartyA">Pizza party</a></li>
+                        <li class="py-2"><a class="text-[14px] lg:text-[18px] lg:px-4" href="#pastaA">Pasta</a></li>
+                        <li class="py-2"><a class="text-[14px] lg:text-[18px] lg:px-4" href="#papadiasA">Papadias</a></li>
+                        <li class="py-2"><a class="text-[14px] lg:text-[18px] lg:px-4" href="#salatlarA">Salatlar</a></li>
+                        <li class="py-2"><a class="text-[14px] lg:text-[18px] lg:px-4" href="#desertlerA">Desertlər</a></li>
+                        <li class="py-2"><a class="text-[14px] lg:text-[18px] lg:px-4" href="#ickilerA">İçkilər</a></li>
+                        <li class="py-2"><a class="text-[14px] lg:text-[18px] lg:px-4" href="#souslarA">Souslar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="pt-[100px] lg:pt-[240px]">
+            <div class="my-container py-6 flex relative">
+                <div class="lg:w-2/3 w-full p-3 lg:p-0">
+                    <div id="kampaniyalar">
+                        <h2 id="kampA" class="fontPapa scroll-mt-56 font-extrabold text-2xl lg:text-4xl uppercase">kampaniyalar</h2>
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-2.5 py-5">
+                            <div class="group h-[330px] lg:h-[370px] lg:hover:shadow-2xl lg:hover:border-gray-800 transition rounded-[16px]">
+                                <img class="rounded-2xl" src="images/kampaniya/kampaniya-1.jpg" alt="" />
+                                <div class="p-3">
+                                    <div class="lg:h-[18px]"><h4 class="fontPapa font-extrabold">Karnaval & 4 Pendir</h4></div>
+                                    <div class="lg:h-[90px]"><p class="text-gray-500 text-[14px] py-2.5">Orta Karnaval + Orta 4 Pendir + Çiken Poppers + Kartof Dilimləri + 2 ədəd içki - CƏMİ 38 AZN!</p></div>
+                                    <div class="lg:h-[15px] mb-2"><span class="my-5 p-[7px]  text-[13px] lg:bg-white bg-gray-300 rounded-2xl">38.00 AZN</span></div>
+                                    <div class="overflow-hidden h-0 group-hover:h-auto transition-all duration-300 py-2 ">
+                                        <button class="px-[15px] bg-[#CFEB0B] border-[1px] border-solid border-black text-black rounded-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 justify-center w-[215px] mt-[5px] h-[28px] hover:bg-white">
+                                          SƏBƏTƏ ƏLAVƏ ET
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group h-[330px] lg:h-[370px]  lg:hover:shadow-2xl lg:hover:border-gray-800 transition rounded-[16px]">
+                                <img class="rounded-2xl" src="images/kampaniya/kampaniya-2.jpg" alt="" />
+                                <div class="p-3">
+                                    <div class="lg:h-[18px]"><h4 class="fontPapa font-extrabold">Papa Miks & Nyu Orleans</h4></div>
+                                    <div class="lg:h-[90px]"><p class="text-gray-500 text-[14px] py-2.5">Papa Miks + Nyu Orleans – CƏMİ 33 AZN!</p></div>
+                                    <div class="lg:h-[15px] mb-2"><span class="my-5 p-[7px]  text-[13px] lg:bg-white bg-gray-300 rounded-2xl">33.00 AZN</span></div>
+                                    <div class="overflow-hidden h-0 group-hover:h-auto transition-all duration-300 py-2 ">
+                                        <button class="px-[15px] bg-[#CFEB0B] border-[1px] border-solid border-black text-black rounded-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 justify-center w-[215px] mt-[5px] h-[28px] hover:bg-white">
+                                          SƏBƏTƏ ƏLAVƏ ET
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group h-[330px] lg:h-[370px] lg:hover:shadow-2xl lg:hover:border-gray-800 transition rounded-[16px]">
+                                <img class="rounded-2xl" src="images/kampaniya/kampaniya-3.jpg" alt="" />
+                                <div class="p-3">
+                                    <div class="lg:h-[18px]"><h4 class="fontPapa font-extrabold">Hot Spaysi & Chicken Ranch</h4></div>
+                                    <div class="lg:h-[90px]"><p class="text-gray-500 text-[14px] py-2.5">Kiçik Hot & Spaysi</p></div>
+                                    <div class="lg:h-[15px] mb-2"><span class="my-5 p-[7px]  text-[13px] lg:bg-white bg-gray-300 rounded-2xl">26.00 AZN</span></div>
+                                    <div class="overflow-hidden h-0 group-hover:h-auto transition-all duration-300 py-2 ">
+                                        <button class="px-[15px] bg-[#CFEB0B] border-[1px] border-solid border-black text-black rounded-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 justify-center w-[215px] mt-[5px] h-[28px] hover:bg-white">
+                                          SƏBƏTƏ ƏLAVƏ ET
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group h-[330px]  lg:h-[370px] lg:hover:shadow-2xl lg:hover:border-gray-800 transition rounded-[16px]">
+                                <img class="rounded-2xl" src="images/kampaniya/kampaniya-4.jpg" alt="" />
+                                <div class="p-3">
+                                    <div class="lg:h-[18px]"><h4 class="fontPapa font-extrabold">Chichken BBQ</h4></div>
+                                    <div class="lg:h-[90px]"><p class="text-gray-500 text-[14px] py-2.5">Kiçik Çiken BBQ + Cheddar Rolls + Kartof Dilimləri – CƏMİ 19 AZN!</p></div>
+                                    <div class="lg:h-[15px] mb-2"><span class="my-5 p-[7px]  text-[13px] lg:bg-white bg-gray-300 rounded-2xl">19.00 AZN</span></div>
+                                    <div class="overflow-hidden h-0 group-hover:h-auto transition-all duration-300 py-2 ">
+                                        <button class="px-[15px] bg-[#CFEB0B] border-[1px] border-solid border-black text-black rounded-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 justify-center w-[215px] mt-[5px] h-[28px] hover:bg-white">
+                                          SƏBƏTƏ ƏLAVƏ ET
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pizzalar">
+                        <h2 id="pizzaA" class="fontPapa scroll-mt-56 font-extrabold text-2xl lg:text-4xl uppercase">pizza</h2>
+                        <div id="pizzalar" class="grid grid-cols-2 lg:grid-cols-3 gap-2.5 py-5"></div>
+                    </div>
+                    <div class="qelyanalti">
+                        <h2 id="fontPapa qelyanaltiA" class="fontPapa scroll-mt-56 font-extrabold text-2xl lg:text-4xl uppercase">qəlyanaltı</h2>
+                        <div id="qelyanalti" class="grid grid-cols-2 lg:grid-cols-3 gap-2.5 py-5"></div>
+                    </div>
+                    <div class="pizzaParty">
+                        <h2 id="pizzaPartyA" class="fontPapa scroll-mt-56 font-extrabold text-2xl lg:text-4xl uppercase">pizza party</h2>
+                        <div id="pizzaParty" class="grid grid-cols-2 lg:grid-cols-3 gap-2.5 py-5"></div>
+                    </div>
+                    <div class="pasta">
+                        <h2 id="pastaA" class="fontPapa scroll-mt-56 font-extrabold text-2xl lg:text-4xl uppercase">pasta</h2>
+                        <div id="pasta" class="grid grid-cols-2 lg:grid-cols-3 gap-2.5 py-5"></div>
+                    </div>
+                    <div class="papadias">
+                        <h2 id="papadiasA" class="fontPapa scroll-mt-56 font-extrabold text-2xl lg:text-4xl uppercase">papadias</h2>
+                        <div id="papadias" class="grid grid-cols-2 lg:grid-cols-3 gap-2.5 py-5"></div>
+                    </div>
+                    <div class="salatlar">
+                        <h2 id="salatlarA" class="fontPapa scroll-mt-56 font-extrabold text-2xl lg:text-4xl uppercase">salatlar</h2>
+                        <div id="salatlar" class="grid grid-cols-2 lg:grid-cols-3 gap-2.5 py-5"></div>
+                    </div>
+                    <div class="desertler">
+                        <h2 id="desertlerA" class="fontPapa scroll-mt-56 font-extrabold text-2xl lg:text-4xl uppercase">Desertlər</h2>
+                        <div id="desertler" class="grid grid-cols-2 lg:grid-cols-3 gap-2.5 py-5"></div>
+                    </div>
+                    <div class="ickiler">
+                        <h2 id="ickilerA" class="fontPapa scroll-mt-56 font-extrabold text-2xl lg:text-4xl uppercase">ickiler</h2>
+                        <div id="ickiler" class="grid grid-cols-2 lg:grid-cols-3 gap-2.5 py-5"></div>
+                    </div>
+                    <div class="souslar">
+                        <h2 id="souslarA" class="fontPapa scroll-mt-56 font-extrabold text-2xl lg:text-4xl uppercase">souslar</h2>
+                        <div id="souslar" class="grid grid-cols-2 lg:grid-cols-3 gap-2.5 py-5"></div>
+                    </div>
+                </div>
+                <div id="cartcont" class="hidden w-1/3 py-3 px-5 text-center lg:block bg-white gap-[10px]">
+                    <div class="p-3 border-[1px] border-gray-300 rounded-lg">
+                        <p class="text-[14px] text-[#2D5D2A] text-left"><i class="fa-solid fa-bicycle"></i> Çatdırılma ünvanını qeyd edin</p>
+                    </div>
+                    <div class="p-6 border-[1px] border-gray-300 rounded-xl mt-3">
+                        <div id="cart">
+                            <img class="w-[60px] h-[60px] mx-[121px]" src="images/menu-cart.png" alt="menu-cart" />
+                            <p id="menu" class="pt-[18px] text-[#C9C9C9] text-center">Səbətiniz boşdur</p>
+                        </div>
+                        <div id="hidden-cart" class="w-full hidden ">
+                            <div  class="h-3/4 w-full">
+                                
+                            </div>
+                            <div class="h-1/4 w-full">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 border-[1px] border-gray-300 rounded-lg mt-3">
+                        <p class="text-[14px] text-[#72747A]">Promokodunuz var mı? Onu burada daxil edin</p>
+                    </div>
+                    <button class="uppercase bg-[#DEDEDE] tracking-[0.1em] w-full py-3 rounded-3xl mt-3 px-4 text-white">Sifarişin təsdiqinə keçid edin</button>
+                </div>
+            </div>
+        </main>
+        <div onclick="toggle()" id="cartBG" class="hidden size-full bg-black fixed z-[990] inset-0 opacity-50"></div>
+
+        <div id="cart-1" class="pt-[10px] lg:pt-[100px] hidden fixed top-1/2 z-[1000] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] lg:w-[75%] h-full rounded-3xl">
+            <div class="bg-gray-200 w-full rounded-3xl overflow-y-auto">
+
+                <div onclick="toggle()" class="absolute right-4 top-4 cursor-pointer">
+                <i class="fa-solid fa-x text-xl mt-[100px]"></i>
+                </div>
+
+                <div id="productDetailsInner" class=" bg-[#ffffff] w-full"></div>
+            </div>
+
+        </div>
+
+        <footer class="bg-[#65A17A]">
+            <div class="my-container lg:px-0 px-4">
+                <div class="border-b-2 border-white ">
+                    <div class="grid grid-cols-2">
+                        <div class="text-white grid md:grid-cols-3 py-5">
+                            <div class="py-4">
+                                <h5 class="fontPapa font-extrabold text-2xl">Şirkətimiz</h5>
+                                <ul class="">
+                                    <li><a href="">Haqqımızda</a></li>
+                                    <li><a href="">Restoranlar</a></li>
+                                    <li><a href="">İnqrediyentlər</a></li>
+                                    <li><a href="">Papa Bonus</a></li>
+                                    <li><a href="">Papa Talk</a></li>
+                                </ul>
+                            </div>
+                            <div class="py-4">
+                                <h5 class="fontPapa font-extrabold text-2xl">Dəstək</h5>
+                                <ul>
+                                    <li><a href="">Bizimlə əlaqə saxlayın</a></li>
+                                    <li><a href="">Qeydiyyatdan keçin</a></li>
+                                    <li><a href="">Sual-Cavab</a></li>
+                                    <li><a href="">Bizim dəstəyimiz</a></li>
+                                </ul>
+                            </div>
+                            <div class="py-4">
+                                <input class="bg-white text-gray-800 px-4 py-2 text-[15px] w-[250px] rounded-md" type="text" placeholder="E-poçt ünvanını daxil et"/>
+                                <button class="fontPapa bg-black text-white uppercase px-4 py-2 mt-2.5 font-bold rounded-md">Abunə olun</button>
+                            </div>
+                        </div>
+                        <div >
+    
+                        </div>                                        
+                    </div>
+                    <div class="text-white font-extrabold text-center text-2xl md:text-3xl md:flex md:justify-between mb-5">
+                        <span class="fontPapa ">Daha Yaxşı İnqrediyentlər. Daha Yaxşı Pizza.</span>
+                        <span class="fontPapa md:inline-block block">Papa Johns</span>
+                    </div>
+                </div>
+                <div>
+                    <ul class="md:flex text-white text-[13px] md:text-[1em]">
+                        <li class="md:p-3"><a href="">Məxfilik siyasəti</a></li>
+                        <li class="md:p-3"><a href="">Kuki faylları ilə əlaqəli siyasət</a></li>
+                        <li class="md:p-3"><a href="">Şərtlər və Qaydalar</a></li>
+                        <li class="md:p-3"><a href="">Xəritə</a></li>
+                    </ul>
+                    <div class="lg:flex">
+                        <div class="flex py-4">
+                            <img class="w-25" src="img/footer_talk_logo.png" alt="" />
+                            <img class="w-50" src="img/footer_icons.png" alt="" />
+                        </div>
+                        <div class="flex text-gray-50 text-4xl p-2">
+                            <a class="p-3" href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a class="p-3" href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a class="p-3" href=""><i class="fa-brands fa-square-youtube"></i></a>
+                            <a class="p-3" href=""><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-white py-3 font-semibold">Mümkün ödəniş üsulları:</p>
+                        <img class="py-3" src="img/footer_payments.png" alt=""/>
+                    </div>
+                    <p class="py-3 text-white text-[14px] font-semibold">©2024 Papa Johns International, Inc. Bütün hüquqlar qorunur. Məhsulların qiymətləri dəyişə bilər. İçkilər ilə bağlı bütün ticarət nişanları təchizatçı tərəfdaşlarımızın qeydiyyatlı ticarət nişanlarıdır. Bəzi təkliflər bir neçə pizzaların alınmasını tələb edir. Bəzi təkliflər yalnız onlayn mövcuddur. Kampaniyalar, kombo və endirimlər eyni zamanda istifadə edilə və toplana bilməz. Saytda göstərilən məhsulların şəkli həmin məhsulun real görünüşündən fərqlənə bilər. Sifarişlər təyin olunmuş çatdırılma sahəsində yerinə yetirilir. Çatdırılma 10 AZN-dən sifariş etdikdə həyata keçirilir.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/data.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

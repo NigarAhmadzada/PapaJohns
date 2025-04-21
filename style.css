@@ -1,0 +1,12 @@
+.fontPapa {
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@media screen and (min-width: 800px) {
+    .my-container {
+        padding: 0 190px;
+        margin: auto;
+    }
+  }
